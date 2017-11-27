@@ -1,8 +1,13 @@
-import Users from './data/users';
+// Import the users and todos data 
+import Users from './data/users'; 
 import Todos from './data/todos';
+
+// loadsh methods to filter the data
 import find from 'lodash/find';
 import filter from 'lodash/filter';
 import sumBy from 'lodash/sumBy';
+
+// import the GraphQL classes for type validation and creating schema objects
 import {
 GraphQLInt,
         GraphQLBoolean,
@@ -13,6 +18,7 @@ GraphQLInt,
         GraphQLSchema,
 } from 'graphql';
 
+// Scema defination for user
 const UserType = new GraphQLObjectType({
     name: 'User',
     description: 'Users in company',
@@ -39,6 +45,8 @@ const UserType = new GraphQLObjectType({
         })
 });
 
+
+// Schema defination for todo
 const TodoType = new GraphQLObjectType({
     name: 'Todo',
     description: 'Task for user',

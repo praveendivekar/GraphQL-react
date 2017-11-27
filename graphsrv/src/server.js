@@ -12,7 +12,7 @@ app.use('/graphql', (req, res, next) => {
     if (req.method === 'OPTIONS') {
         res.sendStatus(200);
     } else {
-        next();
+        next(); // pass the control to next matching route
     }
 });
 

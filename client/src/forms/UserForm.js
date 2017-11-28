@@ -40,16 +40,6 @@ class UserForm extends React.Component {
                         <option value=''>Select department</option>
                         <option value="Development">Development</option>
                         <option value="Support">Support</option>
-                        <option value="Legal">Legal</option>
-                    </select>
-                </label>
-                <label>
-                    Country
-                    <select name="country" value={this.state.country || ''} onChange={this.handleChange}>
-                        <option value=''>Select country</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States">United States</option>
                     </select>
                 </label>
                 <label>
